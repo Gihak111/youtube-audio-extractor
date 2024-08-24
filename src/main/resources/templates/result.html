@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Extraction Result</title>
+</head>
+<body>
+<h1>Extraction Result</h1>
+<p th:text="${message}"></p>
+<div th:if="${filePath != null}">
+    <a th:href="${filePath}">Download Extracted Audio</a>
+</div>
+<a href="/">Back to Home</a>
+</body>
+</html>
